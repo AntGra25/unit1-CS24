@@ -3,6 +3,8 @@
 # 1. flow diagram
 
 # 2. solution
+
+'''.py
 word = input("Please enter text: ")
 words = word.split()
 for word in words:
@@ -10,6 +12,7 @@ for word in words:
         print(word[0], len(word)-2, word[-1], sep="", end=" ")
     else:
         print(word, end=" ")
+'''
 # 3. proof of work
 ![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/ef0856df-1dff-4662-b00d-8351b05f1f38)
 ![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/7aed7f99-ba1d-408a-ad6e-5a76383f9b9e)
