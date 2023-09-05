@@ -20,3 +20,4 @@ def DNAtranslator(in_protein: str) -> str:
 print(DNAtranslator("AGTGC"))
 ```
 # 3. Proof of work
+![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/5f93088c-02b8-4cb3-b6b8-c099c1fe9eee)
