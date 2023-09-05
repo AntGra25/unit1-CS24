@@ -3,7 +3,23 @@
 # 1. Flow diagram
 
 # 2. Solution
+```.py
+num = input("Please enter an integer: ")
+while not num.isdigit():
+    num = input("Please enter an integer: ")
+num = int(num)
 
+div_sum = 0
+for i in range(1, num):
+    if num % i == 0:
+        print(i, end=", ")
+        div_sum += i
+
+if div_sum == num:
+    print(True)
+else:
+    print(False)
+```
 # 3. Proof of work
 ![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/49ecb11b-455e-41b6-9658-bb4070ef9340)
 ![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/9f0abc40-450e-4ade-99c8-b2e15391e8ce)
