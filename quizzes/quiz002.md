@@ -25,4 +25,5 @@ print(is_20_SL(200, -180))
 print(is_20_HL([10, 30, 10, 26], [20, 15, 5, -6]))
 ```
 # 3. Proof of work
-![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/79db66a0-e6da-4b41-813c-d9d778ba898a)
+![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/f7436498-31d7-4d5b-950a-e6155abbda71)
+
