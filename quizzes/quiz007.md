@@ -1,6 +1,7 @@
 # Quiz007
 
 # 1. Flow diagram
+![IMG_20230911_234836](https://github.com/AntGra25/unit1-CS24/assets/142757981/07e263b1-55d0-48e9-ade9-f731768d05e1)
 
 # 2. Solution
 ```.py
