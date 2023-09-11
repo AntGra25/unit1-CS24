@@ -20,3 +20,4 @@ else:
 # if/else implemented in order to differentiate between 'try' and 'tries'
 ```
 # 3. Proof of work
+![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/c41fda9d-4711-4235-898e-8df7d82feae7)
