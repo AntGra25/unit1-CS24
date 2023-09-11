@@ -21,3 +21,4 @@ def cipher(text:str, shift:int) -> str:
     return secret
 ```
 # 3. Proof of work
+![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/8214ad6c-a753-4fc1-a908-f8807f7e2444)
