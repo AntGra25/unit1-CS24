@@ -19,3 +19,14 @@ An example of the data stored is
 1. The electronic ledger is a text-based software (Runs in the Terminal).
 2. The electronic ledger display the basic description of the cyrptocurrency selected.
 3. The electronic ledger allows to enter, withdraw and record transactions.
+4.
+5.
+6.
+
+# Criteria B: Design
+
+## System Diagram
+
+## Flow Diagrams
+
+## Record of Tasks
