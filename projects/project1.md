@@ -19,14 +19,15 @@ An example of the data stored is
 1. The electronic ledger is a text-based software (Runs in the Terminal).
 2. The electronic ledger display the basic description of the cyrptocurrency selected.
 3. The electronic ledger allows to enter, withdraw and record transactions.
-4.
-5.
-6.
+4. The electronic ledger displays the current exchange rate by accessing data from the internet.
+5. The electronic ledger allows to create accounts protected by passwords.
+6. The electronic ledger compares the current exchange rate to rates dating back a year.
 
 # Criteria B: Design
 
 ## System Diagram
-
+![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/13f2d5fc-7e89-4eaf-8a04-08a3ceb52c14)
+The program receives the input from the keyboard and projects its output on the screen while accessing data from the internet. The electronic ledger was programmed on a laptop whose operating system is Windows 10 2H22, CPU is AMD Ryzen 9 5900HX, RAM is 16GB, and disk space is 933GB. Python 3.9.13 is used to code the electronic ledger, which is located in the project1.py file. The data is stored in the database.csv file.
 ## Flow Diagrams
 
 ## Record of Tasks
