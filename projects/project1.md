@@ -31,3 +31,7 @@ The program receives the input from the keyboard and projects its output on the 
 ## Flow Diagrams
 
 ## Record of Tasks
+| Task No | Planned Action        | Planned Outcome                                                                          | Time estimate | Target completion date | Criterion |
+|---------|-----------------------|------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
+| 1       | Create system diagram | To have a clear idea of the hardware and software requirements for the proposed solution | 20min         | Sep 13                 | B         |
+| 2       | Create login system   | To have a flow diagram and the code for the login system                                 | 30min         | Sep 14                 | C         |
