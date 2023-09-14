@@ -29,9 +29,51 @@ An example of the data stored is
 ![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/13f2d5fc-7e89-4eaf-8a04-08a3ceb52c14)
 The program receives the input from the keyboard and projects its output on the screen while accessing data from the internet. The electronic ledger was programmed on a laptop whose operating system is Windows 10 2H22, CPU is AMD Ryzen 9 5900HX, RAM is 16GB, and disk space is 933GB. Python 3.9.13 is used to code the electronic ledger, which is located in the project1.py file. The data is stored in the database.csv file.
 ## Flow Diagrams
-
+[image] Fig.1 This is the flow diagram for the login system
 ## Record of Tasks
 | Task No | Planned Action        | Planned Outcome                                                                          | Time estimate | Target completion date | Criterion |
 |---------|-----------------------|------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
 | 1       | Create system diagram | To have a clear idea of the hardware and software requirements for the proposed solution | 20min         | Sep 13                 | B         |
 | 2       | Create login system   | To have a flow diagram and the code for the login system                                 | 30min         | Sep 14                 | C         |
+
+# Criteria C: Development
+
+## Login System
+My client requires a system to protect the private data. I thought about using a login system to accomplish this requirement using an if condition and the open command to work with a csv file
+
+As you can see the the flow diagram in **Fig 1**, in the first line I am defining a function called try_login. This function has two inputs of type string, and the output is a boolean representing True if the user logins correctly or false otherwise. This is saved in the variable success. Then in line two...
+
+```.py
+def try_login(name:str, password:str) -> bool:
+    with open("users.csv", mode="r") as f:
+        data = f.readlines()
+
+    success = False
+    for line in data:
+        uname = line.split(",")[0]
+        upass = line.split(",")[1].strip()
+        if uname == name and upass == password:
+            success = True
+            break
+    return success
+
+
+attempts = 3
+in_name = input("Enter your username: ")
+in_pass = input("Enter your password: ")
+result = try_login(name=in_name, password=in_pass)
+while result == False and attempts > 1:
+    in_name = input("[Error try again] Enter your username")
+    in_pass = input("Enter your username")
+    result = try_login(name=in_name, password=in_pass)
+    attempts -= 1
+
+if result == False:
+    print("Sayonara")
+    exit(1) # 1 is the code for exit without error
+
+# the program continues here if it does close
+print("Welcome")
+```
+
+
