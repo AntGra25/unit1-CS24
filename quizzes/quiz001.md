@@ -1,7 +1,8 @@
 # Quiz001
 
 # 1. flow diagram
-![IMG_20230906_103428](https://github.com/AntGra25/unit1-CS24/assets/142757981/2016e202-a265-4675-8a24-9414bc3943d0)
+![IMG_20230906_103428](https://github.com/AntGra25/unit1-CS24/assets/142757981/26cd1e45-991c-4b92-b7b9-039b40905c09)
+
 
 # 2. solution
 
