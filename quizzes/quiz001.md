@@ -24,5 +24,5 @@ print(word_compress("Hello world !"))
 print(word_compress("(codin) + (game) = (codingame)"))
 ```
 # 3. proof of work
-![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/9c5a50a5-9634-4ad9-9fda-a988534bcccc)
+![Quiz001](https://github.com/AntGra25/unit1-CS24/assets/142757981/b328ef6e-67ff-4a05-9cbe-58fdbf160f79)
 
