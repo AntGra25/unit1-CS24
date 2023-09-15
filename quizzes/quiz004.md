@@ -1,7 +1,7 @@
 # Quiz004
 
 # 1. Flow diagram
-![IMG_20230906_104522](https://github.com/AntGra25/unit1-CS24/assets/142757981/cd33c355-d9ac-4e66-bdfd-93b89f7ed941)
+![Quiz004C](https://github.com/AntGra25/unit1-CS24/assets/142757981/a1a8c34a-0c2c-46a1-a1a1-6eee5aa42ad9)
 
 # 2. Solution
 ```.py
@@ -22,8 +22,8 @@ else:
     print(False)
 ```
 # 3. Proof of work
-![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/49ecb11b-455e-41b6-9658-bb4070ef9340)
-![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/9f0abc40-450e-4ade-99c8-b2e15391e8ce)
-![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/a0bd4b93-7949-4b0c-8804-d019e3b76f7d)
-![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/f1c5ca53-2028-4001-adaa-1c061bee16ea)
-![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/caa6ec6a-2684-46ab-8aec-91614aa2a66d)
+![Quiz004-1](https://github.com/AntGra25/unit1-CS24/assets/142757981/7ff6d785-6725-417d-8529-bf0a922e002a)
+![Quiz004-2](https://github.com/AntGra25/unit1-CS24/assets/142757981/1eb4ceeb-3016-46ff-8b88-51c712854cf6)
+![Quiz004-3](https://github.com/AntGra25/unit1-CS24/assets/142757981/6c962b41-ae6b-442a-b765-2a550e9de012)
+![Quiz004-4](https://github.com/AntGra25/unit1-CS24/assets/142757981/7b12f526-48a1-4d52-b09c-4551343906f1)
+![Quiz004-5](https://github.com/AntGra25/unit1-CS24/assets/142757981/5eedb6ce-fd8e-415d-80ec-6b5cbcdfc9a3)
