@@ -1,7 +1,7 @@
 # Quiz002
 
 # 1. Flow diagram
-![IMG_20230906_103447](https://github.com/AntGra25/unit1-CS24/assets/142757981/3bb5877f-ca63-4b9f-9db5-b666a520c904)
+![Quiz002C](https://github.com/AntGra25/unit1-CS24/assets/142757981/4968bb8f-65a0-4de2-be52-37ec059aecd6)
 
 # 2. Solution
 ```.py
@@ -25,5 +25,6 @@ print(is_20_SL(200, -180))
 print(is_20_HL([10, 30, 10, 26], [20, 15, 5, -6]))
 ```
 # 3. Proof of work
-![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/f7436498-31d7-4d5b-950a-e6155abbda71)
+![Quiz002](https://github.com/AntGra25/unit1-CS24/assets/142757981/8ab873cc-18bc-4992-85d9-1b112e3f7a79)
+
 
