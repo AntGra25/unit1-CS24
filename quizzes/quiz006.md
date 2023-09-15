@@ -1,7 +1,7 @@
 # Quiz006
 
 # 1. Flow diagram
-![IMG_20230911_234724](https://github.com/AntGra25/unit1-CS24/assets/142757981/dd45d6da-461f-45d8-b4e1-bf0dae4b33e2)
+![Quiz006C](https://github.com/AntGra25/unit1-CS24/assets/142757981/f030780f-d9a7-4fd3-b50f-b88f83d0d792)
 
 # 2. Solution
 ```.py
@@ -12,5 +12,4 @@ def room_loc(room:int) -> str:
         return f"Room {room // 10}F10"
 ```
 # 3. Proof of work
-![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/b0efdcf8-301b-4435-b8f7-68ccd68c5d5e)
-
+![Quiz006](https://github.com/AntGra25/unit1-CS24/assets/142757981/0192911b-af13-4060-9395-3d62bc4d129f)
