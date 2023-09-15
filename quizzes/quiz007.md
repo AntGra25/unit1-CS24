@@ -1,7 +1,7 @@
 # Quiz007
 
 # 1. Flow diagram
-![IMG_20230911_234836](https://github.com/AntGra25/unit1-CS24/assets/142757981/07e263b1-55d0-48e9-ade9-f731768d05e1)
+![Quiz007C](https://github.com/AntGra25/unit1-CS24/assets/142757981/c8b1cf77-167e-4270-a41a-45637b2c74f9)
 
 # 2. Solution
 ```.py
@@ -21,4 +21,4 @@ else:
 # if/else implemented in order to differentiate between 'try' and 'tries'
 ```
 # 3. Proof of work
-![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/c41fda9d-4711-4235-898e-8df7d82feae7)
+![Quiz007](https://github.com/AntGra25/unit1-CS24/assets/142757981/8577dc4a-8405-4280-aaee-9b68d0718167)
