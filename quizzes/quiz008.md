@@ -1,7 +1,7 @@
 # Quiz008
 
 # 1. Flow diagram
-![IMG_20230911_234701](https://github.com/AntGra25/unit1-CS24/assets/142757981/38ef87d2-7de1-4b24-aeb0-4d10c43f2669)
+![Quiz008C](https://github.com/AntGra25/unit1-CS24/assets/142757981/cb55bb7f-c5c4-4cc2-9da2-ec3563bb9a91)
 
 # 2. Solution
 ```.py
@@ -22,4 +22,4 @@ def cipher(text:str, shift:int) -> str:
     return secret
 ```
 # 3. Proof of work
-![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/8214ad6c-a753-4fc1-a908-f8807f7e2444)
+![Quiz008](https://github.com/AntGra25/unit1-CS24/assets/142757981/17a94837-cf1f-4350-94d3-671fa5238586)
