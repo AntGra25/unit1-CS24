@@ -1,7 +1,7 @@
 # Quiz003
 
 # 1. Flow diagram
-![IMG_20230906_103513](https://github.com/AntGra25/unit1-CS24/assets/142757981/bc20aa09-0cb1-41c4-aa4b-25d67fb1adc8)
+![Quiz003C](https://github.com/AntGra25/unit1-CS24/assets/142757981/1bd9ccfe-80ad-46a7-9dfb-6b6c9b7003f0)
 
 # 2. Solution
 ```.py
@@ -25,4 +25,4 @@ print(DNAtranslator("C"))
 print(DNAtranslator("AGCT"))
 ```
 # 3. Proof of work
-![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/5f93088c-02b8-4cb3-b6b8-c099c1fe9eee)
+![Quiz003](https://github.com/AntGra25/unit1-CS24/assets/142757981/d3483dc5-91ab-4ca2-a9c2-76271a41823c)
