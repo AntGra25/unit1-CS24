@@ -31,10 +31,22 @@ The program receives the input from the keyboard and projects its output on the 
 ## Flow Diagrams
 [image] Fig.1 This is the flow diagram for the login system
 ## Record of Tasks
-| Task No | Planned Action        | Planned Outcome                                                                          | Time estimate | Target completion date | Criterion |
-|---------|-----------------------|------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1       | Create system diagram | To have a clear idea of the hardware and software requirements for the proposed solution | 20min         | Sep 13                 | B         |
-| 2       | Create login system   | To have a flow diagram and the code for the login system                                 | 30min         | Sep 14                 | C         |
+| Task No | Planned Action                                      | Planned Outcome                                                                                                                                 | Time estimate | Target completion date | Criterion |
+|---------|-----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
+| 1       | Create system diagram                               | To have a clear idea of the hardware and software requirements for the proposed solution                                                        | 20min         | Sep 13                 | B         |
+| 2       | Create login system                                 | To have a flow diagram and the code for the login system                                                                                        | 30min         | Sep 14                 | B, C      |
+| 3       | Create deposit system                               | To have a way for the user to enter deposits and store them in the user's database                                                              | 15min         | Sep 18                 | C         |
+| 4       | Display balance                                     | To have a way for the user to see the total assets on their account based on deposits and withdrawals                                           | 10min         | Sep 18                 | C         |
+| 5       | Show simple bar graph                               | To have a way for the user to visualize the amount of money deposited compared to money withdrawn                                               | 10min         | Sep 18                 | C         |
+| 6       | Create withdrawal system                            | To have a way for the user to make withdrawals and store them in the user's database                                                            | 5min          | Sep 20                 | C         |
+| 7       | Improve UI                                          | To make it easier for the user to use the program by making it more visually appealing, adding signposts, and adding more accessibility options | 25min         | Sep 29                 | C         |
+| 8       | Add registration system                             | To have a registration system so new users can use the program                                                                                  | 40min         | Sep 29                 | C         |
+| 9       | Research webscraping                                | To have an idea on how to use data collected from the internet later in the program                                                             | 75min         | Sep 30                 | C         |
+| 10      | Create current exchange rate variable               | To have easy access to the coins current exchange rate                                                                                          | 30min         | Sep 30                 | C         |
+| 11      | Create currency conversion function                 | To add multiple currencies to the program                                                                                                       | 15min         | Sep 30                 | C         |
+| 12      | Introduce multiple currencies to transaction system | To allow the user to make deposits and withdrawals with multiple currencies                                                                     | 60min         | Sep 30                 | C         |
+| 13      | Introduce multiple currencies to balance display    | To let the user to better visualize their total assets by allowing to display them in multiple currencies                                       | 30min         | Sep 30                 | C         |
+| 14      |                                                     |                                                                                                                                                 |               |                        |           |
 
 # Criteria C: Development
 
