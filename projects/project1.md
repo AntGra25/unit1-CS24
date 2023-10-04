@@ -45,8 +45,9 @@ By using XRP, I can make a digital ledger with a cryptocurrency that is characte
 # Criteria B: Design
 
 ## System Diagram
-![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/13f2d5fc-7e89-4eaf-8a04-08a3ceb52c14)
-The program receives the input from the keyboard and projects its output on the screen while accessing data from the internet. The electronic ledger was programmed on a laptop whose operating system is Windows 10 2H22, CPU is AMD Ryzen 9 5900HX, RAM is 16GB, and disk space is 933GB. Python 3.9.13 is used to code the electronic ledger, which is located in the project1.py file. The data is stored in the database.csv file.
+![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/c6481a11-b757-4974-834f-9952685a5091)
+
+The program receives the input from the keyboard and projects its output on the screen while accessing data from the internet. The electronic ledger was programmed on a laptop whose operating system is Windows 10 2H22, CPU is AMD Ryzen 9 5900HX, RAM is 16GB, and disk space is 933GB. Python 3.9.13 is used to code the electronic ledger, which is located in the project1.py file. The program accesses libraries created by me which are located in my_lib.py. The transaction data is stored in the 'transactions.csv' file, the users' account data is stored in the 'users.csv' file, and the XRP exchange rates dating back a year are stored in the 'year_rates.csv' file.
 ## Flow Diagrams
 [image] Fig.1 This is the flow diagram for the login system
 ## Record of Tasks
