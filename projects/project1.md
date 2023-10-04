@@ -2,7 +2,7 @@
 
 ## Problem definition
 
-Ms. Sato is a local trader who is interested in the emerging market of cryptocurrencies. She has started to buy and sell electronic currencies, however at the moment she is tracking all his transaction using a ledger in a spreadsheet which is starting to become burdensome and too disorganized. It is also difficult for Ms Sato to find past transactions or important statistics about the currency. Ms Sato is in need of a digital ledger that helps her track the amount of the cryptocurrency, the transactions, along with useful statistics.
+Ms. Sato is a local trader who is interested in the emerging market of cryptocurrencies. She has started to buy and sell electronic currencies, however at the moment she is tracking all her transactions using a ledger in a spreadsheet which is starting to become burdensome and too disorganized. It is also difficult for Ms Sato to find past transactions or important statistics about the currency. Ms Sato is in need of a digital ledger that helps her track the amount of the cryptocurrency, the transactions, along with useful statistics.
 
 Apart for this requirements, Ms Sato is open to explore a cryptocurrency selected by the developer.
 
@@ -51,6 +51,16 @@ By using XRP, I can make a digital ledger with a cryptocurrency that is characte
 The program receives the input from the keyboard and projects its output on the screen while accessing data from the internet. The electronic ledger was programmed on a laptop whose operating system is Windows 10 2H22, CPU is AMD Ryzen 9 5900HX, RAM is 16GB, and disk space is 933GB. Python 3.9.13 is used to code the electronic ledger, which is located in the project1.py file. The program accesses libraries created by me which are located in my_lib.py. The transaction data is stored in the 'transactions.csv' file, the users' account data is stored in the 'users.csv' file, and the XRP exchange rates dating back a year are stored in the 'year_rates.csv' file.
 ## Flow Diagrams
 [image] **Fig.2** This is the flow diagram for the login system
+
+![Flowchart2](https://github.com/AntGra25/unit1-CS24/assets/142757981/1b4ed971-eb57-4a78-9b3b-3d0f2a6668bd)
+
+**Fig.3** This is the flow diagram of the exchange rate information display system
+Ms Sato requires a system that tracks useful statistics about the cryptocurrency that is being used. I thought about using an exchange rate information display system to fulfill this requirement.
+As you can see by the flow diagram in **Fig.3**, the program begins by defining 2 empty lists and storing all the lines from the 'year_rates.csv' file into the 'data' variable. Next, it uses a for loop to iterate each of the lines, splitting them by the ';' symbol. The loop then appends the first element of the line rounded to the 4th decimal place to the 'e_rates' list. It also appends the seventh element of the line to the 'dates' list after formatting it. The program proceeds to divide the current exchange rate of XRP by the exchange rate from one year earlier, formatting the result to have only 2 decimal points, and storing it in the 'first_percent' variable. It then checks if the variable is higher or lower than 0. If it is higher, it sets the status to 'higher', and if it is lower, it sets the status to 'lower', while also multiplying the variable by -1 to make it positive. These two operations are done so that the program can determine by how many percent the current exchange rate is higher or lower than the one from a year earlier. The program then proceeds to divide the current exchange rate by the lowest and highest rates from the year, formats the results in the same way as before, a stores them in the 'min_percent' and 'max_percent' variables, respectively. Finally, the program includes all of this information in a single print statement, also adding the dates on which the four different exchange rates were measured.
+![Flowchart3](https://github.com/AntGra25/unit1-CS24/assets/142757981/73dbdb84-1f1d-45cf-8f7c-01e50e5069b7)
+
+**Fig.4** This is the flow diagram of the balance display system
+
 ## Record of Tasks
 | Task No | Planned Action                                      | Planned Outcome                                                                                                                                     | Time estimate | Target completion date | Criterion |
 |---------|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
