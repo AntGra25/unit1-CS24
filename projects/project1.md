@@ -32,6 +32,15 @@ I will be using Python for the development of this program for four main reasons
 4. Python has a vast range of libraries that make development more effcient. For this project specifically I will use the 'requests' library, which helps extract data from urls that can be used by the 'BeautifulSoup' library, which allows me to easily access the current exchange rate of XRP. I also 'currency_converter' library that allows me to access the exchange rates of major currencies, which I can use to allow entering deposits and taking withdrawals in USD, EUR, and JPY, which improves accessbility for Ms. Sato. Another library I will use is the 'datetime' library, which allows me to access the current date and use it when Ms. Sato makes transactions. The last library I will use is the 'tabulate' library, which allows me to display past transactions in a presentable format, making it easier for Ms. Sato to keep track of her withdrawals.
 I will also be using my own libraries which I will save in the 'my_lib.py' file. These include 'frame_maker', 'print_menu', 'validate_int', 'currency_convert', 'colors', and 'date_format'. These enable more efficient development by facilitating time-consuming processes and allow me to display text in a more presentable manner.
 
+For my repository I will be using GitHub. This is because it allows me to store my code and documentation, essentially acting as a backup and reducing risk of data loss. It is also easily accessible to other users and shows changes made over time, which allows Ms. Sato to monitor the progress of the project.
+
+I chose XRP as the cryptocurrency used in the electronic ledger for the advantages it has over other cryptocurrencies:
+* XRP is known for its rapid transaction settlement times. Confirmations typically occur in just four to five seconds, compared with the days it may take for a wire transfer or minutes or potentially hours for Bitcoin transactions.
+* XRP boasts very low transaction fees. The cost to complete a transaction on the Ripple network is just 0.00001 XRP, which translates to a minimal fraction of a penny at current exchange rates.
+* The Ripple network is highly versatile and not limited to processing transactions using XRP alone. It supports a wide range of fiat currencies and other cryptocurrencies, which allows Ms. Sato to easily transact in multiple currencies, reducing the need for multiple cryptocurrency wallets.
+* XRP has gained significant recognition and adoption among large financial institutions. Institutions like Santander and Bank of America utilize the Ripple network for their transaction needs, setting XRP apart from many other cryptocurrencies.
+By using XRP, I can make a digital ledger with a cryptocurrency that is characterised by its speed, cost-effectiveness, versatility, and instituitional support, which can greatly help Ms. Sato with cryptocurrency trading.
+
 # Criteria B: Design
 
 ## System Diagram
