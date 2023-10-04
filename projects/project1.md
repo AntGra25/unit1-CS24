@@ -46,10 +46,11 @@ By using XRP, I can make a digital ledger with a cryptocurrency that is characte
 
 ## System Diagram
 ![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/c6481a11-b757-4974-834f-9952685a5091)
+**Fig 1** This is the system diagram
 
 The program receives the input from the keyboard and projects its output on the screen while accessing data from the internet. The electronic ledger was programmed on a laptop whose operating system is Windows 10 2H22, CPU is AMD Ryzen 9 5900HX, RAM is 16GB, and disk space is 933GB. Python 3.9.13 is used to code the electronic ledger, which is located in the project1.py file. The program accesses libraries created by me which are located in my_lib.py. The transaction data is stored in the 'transactions.csv' file, the users' account data is stored in the 'users.csv' file, and the XRP exchange rates dating back a year are stored in the 'year_rates.csv' file.
 ## Flow Diagrams
-[image] Fig.1 This is the flow diagram for the login system
+[image] **Fig.2** This is the flow diagram for the login system
 ## Record of Tasks
 | Task No | Planned Action                                      | Planned Outcome                                                                                                                                     | Time estimate | Target completion date | Criterion |
 |---------|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
@@ -78,7 +79,7 @@ The program receives the input from the keyboard and projects its output on the 
 ## Login System
 My client requires a system to protect the private data. I thought about using a login system to accomplish this requirement using an if condition and the open command to work with a csv file
 
-As you can see the the flow diagram in **Fig 1**, in the first line I am defining a function called try_login. This function has two inputs of type string, and the output is a boolean representing True if the user logins correctly or false otherwise. This is saved in the variable success. Then in line two...
+As you can see the the flow diagram in **Fig 2**, in the first line I am defining a function called try_login. This function has two inputs of type string, and the output is a boolean representing True if the user logins correctly or false otherwise. This is saved in the variable success. Then in line two...
 
 ```.py
 def try_login(name:str, password:str) -> bool:
