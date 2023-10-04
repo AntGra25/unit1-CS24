@@ -12,7 +12,6 @@ An example of the data stored is
 |-------------|----------------------------|----------|--------------|
 | Sep 23 2022 | bought a house             | Expenses | 10 BTC       |
 | Sep 24 2022 | food for house celebration | Food     | 0.000001 BTC |
-## Proposed solution
 
 ## Success criteria
 
@@ -22,6 +21,15 @@ An example of the data stored is
 4. The electronic ledger displays the current exchange rate by accessing data from the internet.
 5. The electronic ledger allows to create accounts protected by passwords.
 6. The electronic ledger compares the current exchange rate to rates dating back a year.
+
+## Proposed solution
+Design statement: I will design an XRP electronic ledger for Ms. Sato. It will be evaluated according to the success criteria described in the section above. The program will provide Ms. Sato with the current exchange rate of XRP by directly accessing the internet, so she can make decisions based on up-to-date information. It will also use downloaded data on exchange rates dating back to a year, so that she can compare past values to the current one and make a more informed decision. The program will also allow for the creation of multiple accounts that are protected by passwords, so that Ms. Sato can have her account and her digital ledger secured. The program will be designed in Python 3.9.13 and it will take until Oct 5 2023 to be made.
+
+I will be using Python for the development of this program for four main reasons:
+1. Python has a clear syntax that is understandable even to people with minimal programming experience. This makes the program simpler to maintain and makes explaining the code to Ms. Sato easier.
+2. Python has a large community that is constantly active on the Internet. If I were to run into a problem, I can quickly consult online forums to find an easy fix.
+3. Python is the programming language that I am most proficient in. This makes the development of the program more efficient and allows me to provide more complex solutions than if I were using another programming language
+4. Python has a vast range of libraries that make development more effcient. For this project specifically I will use the 'requests' library, which helps extract data from urls that can be used by the 'BeautifulSoup' library, which allows me to easily access the current exchange rate of XRP. I also 'currency_converter' library that allows me to access the exchange rates of major currencies, which I can use to allow entering deposits and taking withdrawals in USD, EUR, and JPY, which improves accessbility for Ms. Sato. Another library I will use is the 'datetime' library, which allows me to access the current date and use it when Ms. Sato makes transactions. The last library I will use is the 'tabulate' library, which allows me to display past transactions in a presentable format, making it easier for Ms. Sato to keep track of her withdrawals.
 
 # Criteria B: Design
 
