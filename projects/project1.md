@@ -130,4 +130,48 @@ if result == False:
 print("Welcome")
 ```
 
+## Transaction system
+Ms. Sato requires a system that the transactions made with the cryptocurrency used in the digital ledger. I thought about using a deposit and withdrawal system to fulfill this requirement, using a single function to facilitate both types of transactions.
+
+In the first line, i am defining a function called 'transaction'. It has two inputs of type string, which are expected to be either 'deposit' or 'withdraw'. These are saved in the 'type' variable. In lines 2-3 the program provides the user with a numbered list encompassing the options 'Use XRP directly', 'USD', 'EUR', and 'JPY'. Then in lines 4-8 the program makes sure that the user's input which is set as the value of the 'currencies' variable is an integer from 1 to 4. This is done by using a while loop and the 'validate_int' library which is imported from 'my_lib.py'. If 'currencies' = 1 (Use XRP directly), the program asks the user enter the amount of XRP for the transaction, storing the input in the 'amount' variable. If 'currencies' = 2, 3, or 4 (fiat currency options), the program asks the user to enter the amount in the chosen currency and stores it in 'amount'. This is contained in lines 10-15. Next, the program checks which currency was chosen. If option 2 is selected (USD), the 'amount' is divided by the current exchange rate, converting it to XRP. If options 3 or 4 are selected (EUR or JPY), the currency_covert library makes the 'amount' variable converted to its USD counterpart, which is divided by the current exchange rate turning 'amount' into XRP. This is because the exchange rate of XRP is represented in USD terms, meaning EUR and JPY need to be converted to USD first before that is converted to XRP. This is contained in lines  16-20. 
+
+```.py
+def transaction(type:str):  # type = "deposit" or "withdraw"
+    currencies = ["Use XRP directly", "USD", "EUR", "JPY"]
+    print_menu(currencies)
+    currency = validate_int(msg=f"Please enter an option to {type} in XRP (1-4): ", menu="",
+                            error_msg="[Error] Please enter valid option (1-4): ")
+    while currency not in [1, 2, 3, 4]:
+        currency = validate_int(msg=f"Please enter an option to {type} in XRP (1-4): ", menu="",
+                                error_msg="[Error] Please enter valid option (1-4): ")
+    print("")
+    if currency == 1:
+        amount = validate_int(msg=f"Please enter amount of XRP to {type}: ", menu="",
+                              error_msg=f"[Error] Please enter valid amount to {type}: ")
+    else:
+        amount = validate_int(msg=f"Please enter amount of {currencies[currency - 1]} to {type} in XRP: ", menu="",
+                              error_msg=f"[Error] Please enter valid amount to {type}: ")
+    if currency == 2:
+        amount /= float(rate[1:])
+    if currency == 3 or currency == 4:
+        amount = currency_convert(amount=amount, from_currency=currencies[currency - 1],
+                                  to_currency="USD")/float(rate[1:])
+
+    date = datetime.date.today()  # today's date
+    date_format(date=date)
+    if type == "deposit":
+        line = f"{date},{amount}\n"
+    if type == "withdraw":
+        description = input("Please enter a short reason for withdrawal (e.g. 'bought a house')."
+                            " Do not exceed 100 characters: ")
+        while len(description) > 100:
+            description = input("[Error] Exceeded 100 characters. Please enter a short reason for withdrawal: ")
+        category = input("Please categorise the transaction (e.g. 'expenses' or 'food'). Do not exceed 30 characters: ")
+        while len(category) > 30:
+            category = input("[Error] Exceeded 30 characters. Please categorise the transaction: ")
+        line = f"{date},{-amount},{description},{category}\n"
+    with open('transactions.csv', mode='a') as f:
+        f.writelines(line)
+    print("Saved\n")
+```
 
