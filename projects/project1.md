@@ -207,3 +207,25 @@ The program begins by opening the 'transactions.csv' file in read mode ('r') and
         print(colors(color="red", msg=f"{bar_withdrawals} {withdrawals}"))
         print(colors(color="yellow", msg=f"■ = {divisor}XRP\n"))
 ```
+
+## Withdrawal table display system
+
+Ms. Sato requires a system that helps her keep track of transactions, including withdrawals. I thought about using a withdrawal table display system to fulfill this requirement, since it presents the data to the user in an organized manner.
+
+The program begins by initializing the 'withdrawal_data' variable and setting its value as an empty list (line 1). The program proceeds to open the 'transactions.csv' file in read mode ('r') a reads all lines in the file. The data is stored in the 'data' variable, with each line representing a transaction (lines 2-3). Then, a for loop iterates through each line in 'data', using an if statement to check whether the line has 4 elements (indicating a withdrawal). If it does, the program spilts the line by comma and rearranges the second, third, and fourth elements to represent 'Description', 'Category', and 'Amount' respectively. 'Amount' is also changed by being negated, rounded to 2 decimal places, and reoresented in XRP. The modified line is then appended to the 'withdrawal_data' list (the whole process is contained within lines 4-9). 
+
+```.py
+withdrawal_data = []
+        with open('transactions.csv', mode='r') as f:
+            data = f.readlines()
+            for line in data:
+                if len(line.split(",")) == 4:
+                    line_a = line.split(",")
+                    line_a[1], line_a[2], line_a[3] = (line_a[2], line_a[3].strip(),
+                                                       str(round(-1*float(line_a[1]), 2)) + "XRP")
+                    withdrawal_data.append(line_a)
+        col_names = ["Date", "Description", "Category", "Amount"]
+        print(tabulate(withdrawal_data, headers=col_names, tablefmt="fancy_grid"))
+        print("")
+```
+
