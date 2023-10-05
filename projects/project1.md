@@ -174,3 +174,36 @@ def transaction(type:str):  # type = "deposit" or "withdraw"
     print("Saved\n")
 ```
 
+## Bar graph display system
+
+Ms. Sato requires a system that records transactions and helps her keep track of how much cryptocurrency she has. I thought about using a bar graph display system to fulfill this requirement, since it displays the value of deposits compared to the value of withdrawals in an easy to understand manner.
+
+The program begins by opening the 'transactions.csv' file in read mode ('r') and reads all lines from the file (lines 1-2). The data is stored in the 'data' variable, with each line representing a transaction. Next, the program initializes the 'deposits' and 'withdrawals' variables, setting their values to 0 (lines 3-4). Then, a for loop iterates through each line of 'data'. For each line, it uses split(",") to split the line into elements separated by commas. The date and amount are extracted from the line and stored in the 'date' and 'amount' variables. Then, an if/else statement is used to check if the value of 'amount' is greater or smaller than 0. If its greater (deposit) the value is added to 'deposits', and if its smaller (withdrawal) the absolute value is added to withdrawals (whole process described by lines 5-10). After that, the 'divisor' variable is initially set to 100 and is adjusted by a while loop making sure that the values of 'deposits' and 'withdrawals' divided by the divisor are less than or equal to 100 (lines 12-14). This is done to maintain a manageable graph. Next, the number of bars for deposits and withdrawals is calculated by dividing 'deposits' and 'withdrawals' by the divisor. Strings 'bar_deposits' and 'bar_withdrawals' are also initialized with a label and formatting for the graph (lines 15-18). Then, two for loops run to create a visual representation of the data using square blocks. The number of blocks represents the relative count of deposits and withdrawals (lines 19-22). Finally, the graph is printed in color. There is also a message indicating the value of each square block (23-25).
+
+```.py
+        with open('transactions.csv', mode='r') as f:
+            data = f.readlines()
+        deposits = 0
+        withdrawals = 0
+        for line in data:
+            date, amount = line.strip().split(",")[0], line.strip().split(",")[1]
+            if float(amount) > 0:
+                deposits += float(amount)
+            else:
+                withdrawals += -1*float(amount)
+        # create a simple graph
+        divisor = 100
+        while int(deposits // divisor) > 100 or int(withdrawals // 100) > 100:
+            divisor *= 10
+        deposits = int(deposits // divisor)
+        withdrawals = int(withdrawals // divisor)
+        bar_deposits = "deposits".ljust(20)
+        bar_withdrawals = "withdrawals".ljust(20)
+        for x in range(deposits):
+            bar_deposits += "■"
+        for x in range(withdrawals):
+            bar_withdrawals += "■"
+        print(colors(color="green", msg=f"{bar_deposits} {deposits}"))
+        print(colors(color="red", msg=f"{bar_withdrawals} {withdrawals}"))
+        print(colors(color="yellow", msg=f"■ = {divisor}XRP\n"))
+```
