@@ -47,6 +47,45 @@ I chose XRP as the cryptocurrency used in the electronic ledger for the advantag
 By using XRP, I can make a digital ledger with a cryptocurrency that is characterised by its speed, cost-effectiveness, versatility, and instituitional support, which can greatly help Ms. Sato with cryptocurrency trading.
 
 # Criteria B: Design
+## Test plan
+
+| Description                        | Type           | Inputs                                     | Outputs                                                                       |
+|------------------------------------|----------------|--------------------------------------------|-------------------------------------------------------------------------------|
+| Tested login/registration          | Usability test | Option out of range                        | Program asks for input again                                                  |
+| Tested login/registration          | Unit test      | 1 or 2                                     | Program begins login or registration                                          |
+| Tested registration                | Unit test      | Existing username                          | Program asks for different username                                           |
+| Tested registration                | Unit test      | Confirmed wrong password                   | Program asks to try again or to create different password                     |
+| Tested registration                | Unit test      | Ask to confirm password again              | Program asks to confirm password again                                        |
+| Tested registration                | Unit test      | Ask to enter different password            | Program lets user choose new password                                         |
+| Tested registration                | Unit test      | Confirmed password correctly               | Program takes user to login                                                   |
+| Tested login                       | Unit test      | Entered wrong username or password         | Program asks user to try again                                                |
+| Tested login                       | Unit test      | Entered wrong data three times             | Program terminates without error                                              |
+| Tested login                       | Unit test      | Entered correct data                       | Program welcomes user and and shows menu 1-8                                  |
+| Tested menu                        | Usability test | Entered option out of range                | Program asks for input again                                                  |
+| Tested menu                        | Unit test      | Entered correct option                     | Program executes entered option                                               |
+| Tested XRP description             | Unit test      | Entered 1 in menu                          | Program shows XRP description                                                 |
+| Tested exchange rate info          | Unit test      | Entered 2 in menu                          | Program shows XRP exchange rate info                                          |
+| Tested transaction history display | Unit test      | Entered 6 in menu                          | Program shows withdrawal history in a table                                   |
+| Tested bar graph                   | Unit test      | Entered 7 in menu                          | Program shows bar graph of transactions                                       |
+| Tested balance display             | Unit test      | Entered 5 in menu                          | Program asks user which currency they want to use                             |
+| Tested balance display             | Usability test | Entered option out of range                | Program asks for input again                                                  |
+| Tested balance display             | Unit test      | Entered 1 (XRP)                            | Program displays balance in XRP                                               |
+| Tested balance display             | Unit test      | Entered 2-4 (fiat currency)                | Program displays balance in chosen currency                                   |
+| Tested deposit                     | Unit test      | Entered 3 in menu                          | Program asks user which currency they want to use                             |
+| Tested deposit                     | Usability test | Entered option out of range                | Program asks for input again                                                  |
+| Tested deposit                     | Unit test      | Entered option 1-4                         | Program asks for the amount the user wants to deposit in the chosen currency  |
+| Tested deposit                     | Usability test | Entered non-integer value for amount       | Program asks user for input again                                             |
+| Tested deposit                     | Unit test      | Entered valid amount                       | Program saves the deposit                                                     |
+| Tested withdrawal                  | Unit test      | Entered 4 in menu                          | Program asks user which currency they want to withdraw in                     |
+| Tested withdrawal                  | Unit test      | Entered 1-4                                | Program asks for the amount the user wants to withdraw in the chosen currency |
+| Tested withdrawal                  | Unit test      | Entered valid amount                       | Program asks for short reason for withdrawal                                  |
+| Tested withdrawal                  | Usability test | Entered input longer than 100 characters   | Program asks for input again                                                  |
+| Tested withdrawal                  | Unit test      | Entered valid input                        | Program asks to categorize withdrawal                                         |
+| Tested withdrawal                  | Unit test      | Entered valid input                        | Program saves data and continues to menu                                      |
+| Tested balance display             | Unit test      | Asked to display balance again             | Program shows updated balance                                                 |
+| Tested transaction history display | Unit test      | Asked to display transaction history again | Program shows updated transaction history                                     |
+| Tested bar graph                   | Unit test      | Asked to display bar graph again           | Program shows updated bar graph                                               |
+| Tested exit                        | Unit test      | Entered option 8 in menu                   | Program shows nice message and terminates                                     |
 
 ## System Diagram
 ![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/c6481a11-b757-4974-834f-9952685a5091)
