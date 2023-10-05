@@ -1,3 +1,7 @@
+![image](https://github.com/AntGra25/unit1-CS24/assets/142757981/acc07ecb-80b4-40b4-a2bc-5e710753c651)
+
+<sub>Illustration by Eddie Lobanovskiy</sub>
+
 # Criteria A: Planning
 
 ## Problem definition
@@ -68,69 +72,36 @@ Ms. Sato requires a system that tracks the amount of cryptocurrency she possesse
 As you can see by the flow diagram in **Fig.4**, the program begins by storing all lines from the 'transactions.csv' file into the 'data' variable and setting the value of the 'balance' variable to 0. Next, it uses a for loop to over each of the lines in the 'data' variable, splitting them by comma. It then sets the first element as 'date and and second element as 'amount', which it adds to the balance variable. After finishing iterating over the for loop, the program sets the current date as the 'today' variable and prints 'XRP', 'USD', 'EUR', and 'JPY' in a numbered list, asking the user to input a number corresponding to their desired balance display method. This input is stored in the 'dbalance' variable and is asked from the user until it is equal to either 1, 2, 3, or 4. When it is equal, the proceeds to set the 'symbol' variable as the USD symbol and sets the 'value' variable as 0. The program then checks whether the 'dbalance' variable is equal to 2. If it is, the 'balance' variable is multiplied by the current exchange rate, and if it is not, the program checks if 'dbalance' is equal to either 3 or 4. If it is not, the 'balance' variable is not modified, but if it is, the balance is multiplied by the exchange rate and then converted into either EUR or JPY, depending on the value of 'dbalance'. Next, if the value of 'dbalance' is equal to 3, the 'symbol' variable is set to the EUR symbol and the 'value' variable is set to the 'balance' variable rounded to 2 decimal places. If it is not, it can be assumed that 'dbalance' is equal to 4 because of the earlier 'if' condition, and 'symbol' is set to the JPY symbol and 'value' is set to the 'balance' rounded to the first digit. This is because the with JPY, unlike with the EUR and the USD, the lowest coin is 1JPY, meaning there is no such thing as 'half a yen'. Finally, the program takes the value of 'balance' and prints it according to the method chosen earlier by the user along with the current date. The print statement is surrounded by a frame composed of the corresponding symbol (if EUR was chosen as the method of display, the frame will consist of EUR symbols).
 
 ## Record of Tasks
-| Task No | Planned Action                                      | Planned Outcome                                                                                                                                     | Time estimate | Target completion date | Criterion |
-|---------|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1       | Create system diagram                               | To have a clear idea of the hardware and software requirements for the proposed solution                                                            | 20min         | Sep 13                 | B         |
-| 2       | Create login system                                 | To have a flow diagram and the code for the login system                                                                                            | 30min         | Sep 14                 | B, C      |
-| 3       | Create deposit system                               | To have a way for the user to enter deposits and store them in the user's database                                                                  | 15min         | Sep 18                 | C         |
-| 4       | Display balance                                     | To have a way for the user to see the total assets on their account based on deposits and withdrawals                                               | 10min         | Sep 18                 | C         |
-| 5       | Show simple bar graph                               | To have a way for the user to visualize the amount of money deposited compared to money withdrawn                                                   | 10min         | Sep 18                 | C         |
-| 6       | Create withdrawal system                            | To have a way for the user to make withdrawals and store them in the user's database                                                                | 5min          | Sep 20                 | C         |
-| 7       | Improve UI                                          | To make it easier for the user to use the program by making it more visually appealing, adding signposts, and adding more accessibility options     | 25min         | Sep 29                 | C         |
-| 8       | Add registration system                             | To have a registration system so new users can use the program                                                                                      | 40min         | Sep 29                 | C         |
-| 9       | Research webscraping                                | To have an idea on how to use data collected from the internet later in the program                                                                 | 75min         | Sep 30                 | C         |
-| 10      | Create current exchange rate variable               | To have easy access to the coins current exchange rate                                                                                              | 30min         | Sep 30                 | C         |
-| 11      | Create currency conversion function                 | To add multiple currencies to the program                                                                                                           | 15min         | Sep 30                 | C         |
-| 12      | Introduce multiple currencies to transaction system | To allow the user to make deposits and withdrawals with multiple currencies                                                                         | 60min         | Oct 01                 | C         |
-| 13      | Introduce multiple currencies to balance display    | To let the user to better visualize their total assets by allowing to display them in multiple currencies                                           | 30min         | Oct 01                 | C         |
-| 14      | Add basic description of XRP                        | To allow the user to know more about the cryptocurrency used in the digital ledger                                                                  | 15min         | Oct 02                 | C         |
-| 15      | Add 'reason' and 'category' to withdrawal system    | To have a more detailed account of the user's withdrawal                                                                                            | 10min         | Oct 02                 | C         |
-| 16      | Create table displaying withdrawals                 | To create a table displaying withdrawal history in an organized manner                                                                              | 30min         | Oct 02                 | C         |
-| 17      | Create 'year_rates' csv file                        | To have access to XRP's exchange rates dating back to a year                                                                                        | 5min          | Oct 03                 | C         |
-| 18      | Display exchange rate information                   | To have a way for the user to view XRP's current exchange rate and how it compares to the rate from a year ago, the 1-year low, and the 1-year high | 75min         | Oct 03                 | C         |
-| 19      | Edit proposed solution                              | To have an more accurate picture of the solution                                                                                                    | 40min         | Oct 04                 | A         |
-| 20      | Edit system diagram                                 | To have a more accurate system diagram after creating the 'my_lib.py' file and new csv files                                                        | 15min            | Oct 04                 | B         |
+| Task No | Planned Action                                         | Planned Outcome                                                                                                                                     | Time estimate | Target completion date | Criterion |
+|---------|--------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
+| 1       | Create system diagram                                  | To have a clear idea of the hardware and software requirements for the proposed solution                                                            | 20min         | Sep 13                 | B         |
+| 2       | Create login system                                    | To have a flow diagram and the code for the login system                                                                                            | 30min         | Sep 14                 | B, C      |
+| 3       | Create deposit system                                  | To have a way for the user to enter deposits and store them in the user's database                                                                  | 15min         | Sep 18                 | C         |
+| 4       | Display balance                                        | To have a way for the user to see the total assets on their account based on deposits and withdrawals                                               | 10min         | Sep 18                 | C         |
+| 5       | Show simple bar graph                                  | To have a way for the user to visualize the amount of money deposited compared to money withdrawn                                                   | 10min         | Sep 18                 | C         |
+| 6       | Create withdrawal system                               | To have a way for the user to make withdrawals and store them in the user's database                                                                | 5min          | Sep 20                 | C         |
+| 7       | Improve UI                                             | To make it easier for the user to use the program by making it more visually appealing, adding signposts, and adding more accessibility options     | 25min         | Sep 29                 | C         |
+| 8       | Add registration system                                | To have a registration system so new users can use the program                                                                                      | 40min         | Sep 29                 | C         |
+| 9       | Research webscraping                                   | To have an idea on how to use data collected from the internet later in the program                                                                 | 75min         | Sep 30                 | C         |
+| 10      | Create current exchange rate variable                  | To have easy access to the coins current exchange rate                                                                                              | 30min         | Sep 30                 | C         |
+| 11      | Create currency conversion function                    | To add multiple currencies to the program                                                                                                           | 15min         | Sep 30                 | C         |
+| 12      | Introduce multiple currencies to transaction system    | To allow the user to make deposits and withdrawals with multiple currencies                                                                         | 60min         | Oct 01                 | C         |
+| 13      | Introduce multiple currencies to balance display       | To let the user to better visualize their total assets by allowing to display them in multiple currencies                                           | 30min         | Oct 01                 | C         |
+| 14      | Add basic description of XRP                           | To allow the user to know more about the cryptocurrency used in the digital ledger                                                                  | 15min         | Oct 02                 | C         |
+| 15      | Add 'reason' and 'category' to withdrawal system       | To have a more detailed account of the user's withdrawal                                                                                            | 10min         | Oct 02                 | C         |
+| 16      | Create table displaying withdrawals                    | To create a table displaying withdrawal history in an organized manner                                                                              | 30min         | Oct 02                 | C         |
+| 17      | Create 'year_rates' csv file                           | To have access to XRP's exchange rates dating back to a year                                                                                        | 5min          | Oct 03                 | C         |
+| 18      | Display exchange rate information                      | To have a way for the user to view XRP's current exchange rate and how it compares to the rate from a year ago, the 1-year low, and the 1-year high | 75min         | Oct 03                 | C         |
+| 19      | Edit proposed solution                                 | To have an more accurate picture of the solution                                                                                                    | 40min         | Oct 04                 | A         |
+| 20      | Edit system diagram                                    | To have a more accurate system diagram after creating the 'my_lib.py' file and new csv files                                                        | 15min         | Oct 04                 | B         |
+| 21      | Improve UI again                                       | To make the program more visually appealing                                                                                                         | 15min         | Oct 04                 | C         |
+| 22      | Create flow diagrams for 3 different parts of the code | To allow the user to know how the program works and what the reasoning behind the proposed solutions is                                             | 120min        | Oct 05                 | B         |
+| 23      | Create descriptions for flow diagrams                  | To make understanding the flow charts easier                                                                                                        | 60min         | Oct 05                 | B         |
 # Criteria C: Development
 
-## Login System
-My client requires a system to protect the private data. I thought about using a login system to accomplish this requirement using an if condition and the open command to work with a csv file
+## Code snippets
 
-As you can see the the flow diagram in **Fig 2**, in the first line I am defining a function called try_login. This function has two inputs of type string, and the output is a boolean representing True if the user logins correctly or false otherwise. This is saved in the variable success. Then in line two...
-
-```.py
-def try_login(name:str, password:str) -> bool:
-    with open("users.csv", mode="r") as f:
-        data = f.readlines()
-
-    success = False
-    for line in data:
-        uname = line.split(",")[0]
-        upass = line.split(",")[1].strip()
-        if uname == name and upass == password:
-            success = True
-            break
-    return success
-
-
-attempts = 3
-in_name = input("Enter your username: ")
-in_pass = input("Enter your password: ")
-result = try_login(name=in_name, password=in_pass)
-while result == False and attempts > 1:
-    in_name = input("[Error try again] Enter your username")
-    in_pass = input("Enter your username")
-    result = try_login(name=in_name, password=in_pass)
-    attempts -= 1
-
-if result == False:
-    print("Sayonara")
-    exit(1) # 1 is the code for exit without error
-
-# the program continues here if it does close
-print("Welcome")
-```
-
-## Transaction system
+### Transaction system
 Ms. Sato requires a system that the transactions made with the cryptocurrency used in the digital ledger. I thought about using a deposit and withdrawal system to fulfill this requirement, using a single function to facilitate both types of transactions.
 
 In the first line, i am defining a function called 'transaction'. It has two inputs of type string, which are expected to be either 'deposit' or 'withdraw'. These are saved in the 'type' variable. In lines 2-3 the program provides the user with a numbered list encompassing the options 'Use XRP directly', 'USD', 'EUR', and 'JPY'. Then in lines 4-8 the program makes sure that the user's input which is set as the value of the 'currencies' variable is an integer from 1 to 4. This is done by using a while loop and the 'validate_int' library which is imported from 'my_lib.py'. If 'currencies' = 1 (Use XRP directly), the program asks the user enter the amount of XRP for the transaction, storing the input in the 'amount' variable. If 'currencies' = 2, 3, or 4 (fiat currency options), the program asks the user to enter the amount in the chosen currency and stores it in 'amount'. This is contained in lines 10-15. Next, the program checks which currency was chosen. If option 2 is selected (USD), the 'amount' is divided by the current exchange rate, converting it to XRP. If options 3 or 4 are selected (EUR or JPY), the currency_covert library makes the 'amount' variable converted to its USD counterpart, which is divided by the current exchange rate turning 'amount' into XRP. This is because the exchange rate of XRP is represented in USD terms, meaning EUR and JPY need to be converted to USD first before that is converted to XRP. This is contained in lines  16-20. Then in line 22 the program saves the current date in the 'date' variable by using the 'datetime' library. Next, the program checks whether the 'type' variable is equal to 'deposit' or 'withdraw'. If it is 'deposit', the variable 'line' is set to 'date' and 'amount', separated by a comma. This is decsribed in lines 23-24. If 'type' is equal to 'withdraw', the program first asks the user to input a reason and category of withdrawal, making sure they do not exceed 100 and 30 characters respectively by using a while loop. These inputs are stored in the 'description' and 'category' variables and are set as the value for 'line' along with the current date and a positive value of 'amount'. This process is described by lines 25-33. Finally the program uses the open command in line 34 to work with 'transactions.csv', it appends the 'line' variable to the csv file in line 35, and prints 'Saved' in line 36 so that the user knows the process was successful.
@@ -174,7 +145,7 @@ def transaction(type:str):  # type = "deposit" or "withdraw"
     print("Saved\n")
 ```
 
-## Bar graph display system
+### Bar graph display system
 
 Ms. Sato requires a system that records transactions and helps her keep track of how much cryptocurrency she has. I thought about using a bar graph display system to fulfill this requirement, since it displays the value of deposits compared to the value of withdrawals in an easy to understand manner.
 
@@ -208,7 +179,7 @@ The program begins by opening the 'transactions.csv' file in read mode ('r') and
         print(colors(color="yellow", msg=f"■ = {divisor}XRP\n"))
 ```
 
-## Withdrawal table display system
+### Withdrawal table display system
 
 Ms. Sato requires a system that helps her keep track of transactions, including withdrawals. I thought about using a withdrawal table display system to fulfill this requirement, since it presents the data to the user in an organized manner.
 
@@ -230,4 +201,16 @@ withdrawal_data = []
         print(tabulate(withdrawal_data, headers=col_names, tablefmt="fancy_grid"))
         print("")
 ```
+
+## Sources
+
+[XRP exchange rate](https://coinmarketcap.com/currencies/xrp/)
+
+[XRP information](https://www.forbes.com/advisor/investing/cryptocurrency/what-is-ripple-xrp/)
+
+[tabulate library](https://www.statology.org/create-table-in-python/)
+
+[currency_converter library](https://pypi.org/project/CurrencyConverter/)
+
+[Lucidchart](https://www.lucidchart.com)
 
