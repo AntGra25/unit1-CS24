@@ -1,6 +1,7 @@
 # Quiz010
 
 # 1. flow chart
+![Quiz010C](https://github.com/AntGra25/unit1-CS24/assets/142757981/b5a3ed7d-639a-431a-977f-caafd4f1b08f)
 
 # 2. solution
 ```.py
