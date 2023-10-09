@@ -25,3 +25,4 @@ print(blackBoxThree(given="abABabAB"))
 print(blackBoxThree(given="Create a Function"))
 ```
 # 3. proof of work
+![Quiz014](https://github.com/AntGra25/unit1-CS24/assets/142757981/67cc0945-c812-4255-918c-d27284544848)
