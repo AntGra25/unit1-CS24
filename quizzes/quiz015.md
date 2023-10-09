@@ -22,3 +22,4 @@ print(open_doors(num_students=200))
 print(open_doors(num_students=5678))
 ```
 # 3. proof of work
+![Quiz015](https://github.com/AntGra25/unit1-CS24/assets/142757981/c93698e3-4827-4f5b-8848-c541b1030250)
