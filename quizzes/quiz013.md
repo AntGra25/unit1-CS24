@@ -15,3 +15,4 @@ print(mysteryTwo(A=60, B=5))
 print(mysteryTwo(A=10, B=4))
 ```
 # 3. proof of work
+![Quiz013](https://github.com/AntGra25/unit1-CS24/assets/142757981/0bd450df-52da-4459-9475-ca22a99471d8)
