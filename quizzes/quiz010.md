@@ -36,3 +36,4 @@ start_day, total = months[month][0], months[month][1]
 print(cal(month=month, start_day=start_day, total=total))
 ```
 # 3. proof of work
+![Quiz010](https://github.com/AntGra25/unit1-CS24/assets/142757981/8b1604e1-0228-4815-ad5b-7299f7abe265)
