@@ -14,3 +14,4 @@ print(mystery(A=10, B=10))
 print(mystery(A=70, B=50))
 ```
 # 3. proof of work
+![Quiz012](https://github.com/AntGra25/unit1-CS24/assets/142757981/b532b68c-fcf1-4737-9ae7-20ffe25a0de0)
