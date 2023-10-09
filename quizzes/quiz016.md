@@ -19,3 +19,4 @@ print(averageLength(words=["Computer Science", "Art"]))
 print(averageLength(words=["one", "two"]))
 ```
 # 3. proof of work
+![Quiz016](https://github.com/AntGra25/unit1-CS24/assets/142757981/7c076d09-e320-43dc-8cc7-48669360c100)
